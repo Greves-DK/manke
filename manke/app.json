@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "Manke",
+    "slug": "manke",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "manke",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#F3F4FA",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "dk.greves.manke"
+    },
+    "android": {
+      "package": "dk.greves.manke",
+      "adaptiveIcon": {
+        "backgroundColor": "#3F5BEA",
+        "foregroundImage": "./assets/images/adaptive-icon.png"
+      }
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Manke bruger din placering til at hente vejret ved stalden."
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#F3F4FA",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 96
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": false
+    }
+  }
+}
